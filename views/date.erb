@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Date page</title>
+  </head>
+  <body>
+    <% today = Time.now.to_date %>
+    <% month = today.strftime('%B') %>
+    <% day_str = today.strftime('%A') %>
+    <% day_num = today.strftime('%d') %>
+    <% year = today.strftime('%Y') %>
+    <p>The date is <%= day_str%>, <%= month%> <%=day_num %>, <%= year%></p>
+  </body>
+</html>
